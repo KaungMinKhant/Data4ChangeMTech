@@ -27,13 +27,152 @@ d3.json('https://raw.githubusercontent.com/KaungKhantThu/UniHack/master/TotalTDI
     bindto: '#chart',
     data: {
       columns: [
-      ["data1", way[0], way[1], way[2], way[3], way[4], way[5], way[6], way[7],way[8],way[9],way[10],way[11],way[12],way[13],way[14] ],
+      ["Unemployed People", way[0], way[1], way[2], way[3], way[4], way[5], way[6], way[7],way[8],way[9],way[10],way[11],way[12],way[13],way[14] ],
       ],
       type: 'bar',
     }
   });
 });
 
+d3.json('https://raw.githubusercontent.com/KaungKhantThu/UniHack/master/TotalTDI.json', function(data) {
+  var modData = [];
+  var item;
+  data.Sheet1.forEach(function(d, i) {
+  modData[i] = d.ACTS_15_64_EMP_T;
+    
+  });
+
+  console.log(modData);
+
+  var way = [];
+ 
+  for(var i = 0; i <= modData.length; i++){
+    way[i]=parseInt(modData[i]);
+      }
+
+  console.log(way);
+  var chart = c3.generate({
+    bindto: '#chart_3',
+    data: {
+      columns: [
+      ["Employed People", way[0], way[1], way[2], way[3], way[4], way[5], way[6], way[7],way[8],way[9],way[10],way[11],way[12],way[13],way[14] ],
+      ],
+      type: 'bar',
+    }
+  });
+});
+
+d3.json('https://raw.githubusercontent.com/KaungKhantThu/UniHack/master/TotalTDI.json', function(data) {
+  var modData = [];
+  var item;
+  data.Sheet1.forEach(function(d, i) {
+  modData[i] = d.HIGHG_25_AUD_T;
+    
+  });
+
+  console.log(modData);
+
+  var way = [];
+ 
+  for(var i = 0; i <= modData.length; i++){
+    way[i]=parseInt(modData[i]);
+      }
+
+  console.log(way);
+  var chart = c3.generate({
+    bindto: '#chart_4',
+    data: {
+      columns: [
+      ["Undergrad Students", way[0], way[1], way[2], way[3], way[4], way[5], way[6], way[7],way[8],way[9],way[10],way[11],way[12],way[13],way[14] ],
+      ],
+      type: 'bar',
+    }
+  });
+});
+
+d3.json('https://raw.githubusercontent.com/KaungKhantThu/UniHack/master/TotalTDI.json', function(data) {
+  var modData = [];
+  var item;
+  data.Sheet1.forEach(function(d, i) {
+  modData[i] = d.HIGHG_25_APD_T;
+    
+  });
+
+  console.log(modData);
+
+  var way = [];
+ 
+  for(var i = 0; i <= modData.length; i++){
+    way[i]=parseInt(modData[i]);
+      }
+
+  console.log(way);
+  var chart = c3.generate({
+    bindto: '#chart_5',
+    data: {
+      columns: [
+      ["Postgrad Students", way[0], way[1], way[2], way[3], way[4], way[5], way[6], way[7],way[8],way[9],way[10],way[11],way[12],way[13],way[14] ],
+      ],
+      type: 'bar',
+    }
+  });
+});
+
+d3.json('https://raw.githubusercontent.com/KaungKhantThu/UniHack/master/TotalTDI.json', function(data) {
+  var modData = [];
+  var item;
+  data.Sheet1.forEach(function(d, i) {
+  modData[i] = d.FACTTOT;
+    
+  });
+
+  console.log(modData);
+
+  var way = [];
+ 
+  for(var i = 0; i <= modData.length; i++){
+    way[i]=parseInt(modData[i]);
+      }
+
+  console.log(way);
+  var chart = c3.generate({
+    bindto: '#chart_6',
+    data: {
+      columns: [
+      ["Number of Factories", way[0], way[1], way[2], way[3], way[4], way[5], way[6], way[7],way[8],way[9],way[10],way[11],way[12],way[13],way[14] ],
+      ],
+      type: 'bar',
+    }
+  });
+});
+
+d3.json('https://raw.githubusercontent.com/KaungKhantThu/UniHack/master/TotalTDI.json', function(data) {
+  var modData = [];
+  var item;
+  data.Sheet1.forEach(function(d, i) {
+  modData[i] = d.CONB;
+    
+  });
+
+  console.log(modData);
+
+  var way = [];
+ 
+  for(var i = 0; i <= modData.length; i++){
+    way[i]=parseInt(modData[i]);
+      }
+
+  console.log(way);
+  var chart = c3.generate({
+    bindto: '#chart_7',
+    data: {
+      columns: [
+      ["Number of Companies", way[0], way[1], way[2], way[3], way[4], way[5], way[6], way[7],way[8],way[9],way[10],way[11],way[12],way[13],way[14] ],
+      ],
+      type: 'bar',
+    }
+  });
+});
 /*var chart = c3.generate({
   bindto: '#chart',
   data: {
