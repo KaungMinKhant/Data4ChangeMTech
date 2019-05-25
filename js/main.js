@@ -10,17 +10,17 @@ d3.json('https://raw.githubusercontent.com/KaungKhantThu/UniHack/master/TotalTDI
   var modData = [];
   var item;
   data.Sheet1.forEach(function(d, i) {
-  modData[i] = d.ACTS_15_64_UNEMP_T;
+    modData[i] = d.ACTS_15_64_UNEMP_T;
     
   });
 
   console.log(modData);
 
   var way = [];
- 
+  
   for(var i = 0; i <= modData.length; i++){
     way[i]=parseInt(modData[i]);
-      }
+  }
 
   console.log(way);
   var chart = c3.generate({
@@ -38,17 +38,17 @@ d3.json('https://raw.githubusercontent.com/KaungKhantThu/UniHack/master/TotalTDI
   var modData = [];
   var item;
   data.Sheet1.forEach(function(d, i) {
-  modData[i] = d.ACTS_15_64_EMP_T;
+    modData[i] = d.ACTS_15_64_EMP_T;
     
   });
 
   console.log(modData);
 
   var way = [];
- 
+  
   for(var i = 0; i <= modData.length; i++){
     way[i]=parseInt(modData[i]);
-      }
+  }
 
   console.log(way);
   var chart = c3.generate({
@@ -66,17 +66,17 @@ d3.json('https://raw.githubusercontent.com/KaungKhantThu/UniHack/master/TotalTDI
   var modData = [];
   var item;
   data.Sheet1.forEach(function(d, i) {
-  modData[i] = d.HIGHG_25_AUD_T;
+    modData[i] = d.HIGHG_25_AUD_T;
     
   });
 
   console.log(modData);
 
   var way = [];
- 
+  
   for(var i = 0; i <= modData.length; i++){
     way[i]=parseInt(modData[i]);
-      }
+  }
 
   console.log(way);
   var chart = c3.generate({
@@ -94,17 +94,17 @@ d3.json('https://raw.githubusercontent.com/KaungKhantThu/UniHack/master/TotalTDI
   var modData = [];
   var item;
   data.Sheet1.forEach(function(d, i) {
-  modData[i] = d.HIGHG_25_APD_T;
+    modData[i] = d.HIGHG_25_APD_T;
     
   });
 
   console.log(modData);
 
   var way = [];
- 
+  
   for(var i = 0; i <= modData.length; i++){
     way[i]=parseInt(modData[i]);
-      }
+  }
 
   console.log(way);
   var chart = c3.generate({
@@ -122,17 +122,17 @@ d3.json('https://raw.githubusercontent.com/KaungKhantThu/UniHack/master/TotalTDI
   var modData = [];
   var item;
   data.Sheet1.forEach(function(d, i) {
-  modData[i] = d.FACTTOT;
+    modData[i] = d.FACTTOT;
     
   });
 
   console.log(modData);
 
   var way = [];
- 
+  
   for(var i = 0; i <= modData.length; i++){
     way[i]=parseInt(modData[i]);
-      }
+  }
 
   console.log(way);
   var chart = c3.generate({
@@ -150,17 +150,17 @@ d3.json('https://raw.githubusercontent.com/KaungKhantThu/UniHack/master/TotalTDI
   var modData = [];
   var item;
   data.Sheet1.forEach(function(d, i) {
-  modData[i] = d.CONB;
+    modData[i] = d.CONB;
     
   });
 
   console.log(modData);
 
   var way = [];
- 
+  
   for(var i = 0; i <= modData.length; i++){
     way[i]=parseInt(modData[i]);
-      }
+  }
 
   console.log(way);
   var chart = c3.generate({
@@ -194,9 +194,9 @@ d3.json('https://raw.githubusercontent.com/KaungKhantThu/UniHack/master/TotalTDI
     });*/
 
 
-var chart = c3.generate({
-  bindto: '#chart_2',
-  data: {
+    var chart = c3.generate({
+      bindto: '#chart_2',
+      data: {
         // iris data from R
         columns: [
         ['data1', 30],
