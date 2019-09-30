@@ -6,6 +6,15 @@
   });
 });*/
 
+
+/*document.getElementById("#btn-mm").onclick = function() {
+  document.getElementById("#chart").hide();
+}*/
+function myanmar(){
+  document.getElementById("chart").style.display = "none";
+}
+//start
+
 d3.json('https://raw.githubusercontent.com/KaungKhantThu/UniHack/master/TotalTDI.json', function(data) {
   var modData = [];
   var item;
@@ -27,13 +36,14 @@ d3.json('https://raw.githubusercontent.com/KaungKhantThu/UniHack/master/TotalTDI
     bindto: '#chart',
     data: {
       columns: [
-      ["Unemployed People", way[0], way[1], way[2], way[3], way[4], way[5], way[6], way[7],way[8],way[9],way[10],way[11],way[12],way[13],way[14] ],
+      ["Unemployed People(age 15-64)", way[0], way[1], way[2], way[3], way[4], way[5], way[6], way[7],way[8],way[9],way[10],way[11],way[12],way[13],way[14] ],
+      ["Total Population", 1689441, 286627, 1574079, 478801, 5325347, 1408401, 3917055, 6165723, 2054393, 3188807, 7360703, 6184829, 1160242 , 4867373, 5824432]
       ],
       type: 'bar',
     }
   });
 });
-
+//end
 d3.json('https://raw.githubusercontent.com/KaungKhantThu/UniHack/master/TotalTDI.json', function(data) {
   var modData = [];
   var item;
@@ -55,7 +65,8 @@ d3.json('https://raw.githubusercontent.com/KaungKhantThu/UniHack/master/TotalTDI
     bindto: '#chart_3',
     data: {
       columns: [
-      ["Employed People", way[0], way[1], way[2], way[3], way[4], way[5], way[6], way[7],way[8],way[9],way[10],way[11],way[12],way[13],way[14] ],
+      ["Employed People(age 15-64)", way[0], way[1], way[2], way[3], way[4], way[5], way[6], way[7],way[8],way[9],way[10],way[11],way[12],way[13],way[14] ],
+      ["Total Population", 1689441, 286627, 1574079, 478801, 5325347, 1408401, 3917055, 6165723, 2054393, 3188807, 7360703, 6184829, 1160242 , 4867373, 5824432],
       ],
       type: 'bar',
     }
@@ -125,6 +136,8 @@ d3.json('https://raw.githubusercontent.com/KaungKhantThu/UniHack/master/TotalTDI
     modData[i] = d.FACTTOT;
     
   });
+
+  
 
   console.log(modData);
 
